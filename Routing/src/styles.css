@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+.hoverstyle li.selected{
+    background-color: rgb(207, 231, 226);
+    color: rgb(193, 219, 244);
+    /* background-image:url("routingdemo/src/assets/animals.jpeg") ; */
+}
+.heading{
+    text-align:center;
+    font-style:sans-serif;
+    
+    background-color: bisque;
+} 
+
+button:hover{
+    background-color: rgb(78, 200, 159);
+    z-index: 1;
+}
+#align{
+    text-align: center;
+    margin: auto;
+}
+
+
