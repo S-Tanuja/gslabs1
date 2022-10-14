@@ -1,0 +1,70 @@
+<form class="form-wrap"[formGroup]="regForm">
+  <h2>Covaxin</h2>
+  <div style="text-align:center;">
+    <small class="small1">live mask free</small>
+
+  </div>
+  <div class="forminfo">
+    <label for="name">Name</label><br>
+    <input class="inputfield"[class.is-invalid]="regForm.get('name').invalid && regForm.get('name').touched" formControlName="name"
+      type="text"><br>
+    <!-- <small [class.err]="regForm.get('name')?.valid || regForm.get('name')?.untouched" class="small">Name is required</small> -->
+    <div *ngIf="regForm.get('name').invalid && regForm.get('name').touched" class="small">
+      <small *ngIf="regForm.get('name').errors?.['required']" class="small">Name is required</small>
+      <small *ngIf="regForm.get('name').errors?.['pattern']" class="small">Name must contain only characters</small>
+    </div>
+  </div>
+
+  <div class="forminfo">
+    <label for="contact">Contact</label><br>
+    <input class="inputfield" formControlName="contact" type="text" required>
+    <div *ngIf="regForm.get('contact').invalid && regForm.get('contact').touched" class="small">
+      <small *ngIf="regForm.get('contact').errors?.['required']" class="small">Contact number is required</small>
+      <small *ngIf="regForm.get('contact').errors?.['pattern']" class="small">Contact number should contain only
+        digits</small>
+      <small *ngIf="regForm.get('contact').errors?.['minlength']" class="small">Contact must contain 10 digits</small>
+
+
+    </div>
+  </div>
+  <div class="forminfo">
+    <label for="email">Email</label><br>
+    <input class="inputfield"[class.is-invalid]="regForm.get('email').invalid && regForm.get('email').touched" formControlName="email"
+      type="email"><br>
+    <small [class.err]="regForm.get('email').valid||regForm.get('email').untouched" class="small">Email is
+      required</small>
+  </div>
+
+  <div class="forminfo">
+    <label for="age">Age</label><br>
+    <input class="inputfield" formControlName="age" type="string">
+  </div>
+
+  <div class="forminfo">
+    <label for="vaccinationId">Vaccination Id</label><br>
+    <input class="inputfield" formControlName="vaccinationId" type="string">
+
+  </div>
+
+  <div class="forminfo">
+    <label for="confirmVaccinationId">Confirm Vaccination Id</label><br>
+    <input class="inputfield" formControlName="confirmVaccinationId" type="string"><br>
+    <!-- <small class="err"*ngIf="regForm.errors?.['mismatch']" class="small">Vaccination Id does not match!Please re-enter.</small> -->
+  </div>
+
+  <div class="forminfo">
+    <label for="address">Address</label><br>
+    <input class="inputfield" [class.is-invalid]="regForm.get('location').invalid && regForm.get('location').touched"
+      formControlName="location" type="text"><br>
+    <small [class.err]="regForm.get('location').valid||regForm.get('location').untouched" class="small">Location is
+      required</small>
+    <input class="inputfield" type="text" (click)="add()" placeholder="add nearby peferred locations">
+    <div formArrayName="addLoc" *ngFor="let loc of addLoc['controls']; let i=index">
+      <input type="text" [formControlName]="i">
+    </div>
+  </div>
+
+  <button class="btn" type="submit" (click)="register()">Register</button>
+  <button (click)="load()" type="submit" class="btn1">LoadApi</button>
+
+</form>
