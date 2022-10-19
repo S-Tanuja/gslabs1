@@ -58,8 +58,8 @@
       formControlName="location" type="text"><br>
     <small [class.err]="regForm.get('location').valid||regForm.get('location').untouched" class="small">Location is
       required</small>
-    <input class="inputfield" type="text" (click)="add()" placeholder="add nearby peferred locations">
-    <div formArrayName="addLoc" *ngFor="let loc of addLoc['controls']; let i=index">
+    <input  class="inputfield" type="text" (click)="add()" placeholder="add nearby peferred locations">
+    <div class="inputfield"formArrayName="addLoc" *ngFor="let loc of addLoc['controls']; let i=index">
       <input type="text" [formControlName]="i">
     </div>
   </div>
@@ -68,3 +68,5 @@
   <button (click)="load()" type="submit" class="btn1">LoadApi</button>
 
 </form>
+
+

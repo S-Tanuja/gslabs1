@@ -55,6 +55,7 @@ register(){
     alert(
       "Register sucessfull"
     )
+    console.log(this.regForm);
   }
 }
 

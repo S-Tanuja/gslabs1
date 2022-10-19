@@ -1,0 +1,17 @@
+.parent{
+    background-color: bisque;
+    /* width: 50vw;
+    height:50vh; */
+    text-align: center;
+   
+}
+.main{
+    display: flex;
+    flex-direction:column;
+}
+.btn{
+    padding: 5px;
+    background-color:#ececec;
+    margin-left: 35px;
+    margin-top: 10px;
+}

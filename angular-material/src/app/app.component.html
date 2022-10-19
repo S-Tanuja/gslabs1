@@ -1,0 +1,65 @@
+<mat-toolbar>
+  <div class="justify">
+
+    <div class="person">
+      <mat-icon>person</mat-icon>
+      <h2>My App</h2>
+    </div>
+    <!-- <span class="example-spacer"></span> -->
+
+    <div class="icons">
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+      </button>
+    </div>
+  </div>
+
+
+
+</mat-toolbar>
+<mat-expansion-panel hideToggle>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      JioMart
+    </mat-panel-title>
+    <mat-panel-description>
+      Welcome to DhamakaOffers!
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+
+  <mat-tab-group>
+    <mat-tab label="Gadgets">
+      <h4>Select your choice of interest</h4>
+      <p>
+        <mat-checkbox>Mobile Phones</mat-checkbox>
+      </p>
+      <p>
+        <mat-checkbox>Grinders</mat-checkbox>
+      </p>
+      <p>
+        <mat-checkbox>Washing Machine</mat-checkbox>
+      </p>
+      <h4>Range</h4>
+      <mat-radio-group>
+        <mat-radio-button value="5k-10k">5,000-10,000</mat-radio-button><br><br>
+        <mat-radio-button value="10k-20k">10,000-20,000</mat-radio-button><br><br>
+        <mat-radio-button value="20k and above">20,000 and above</mat-radio-button><br><br>
+      </mat-radio-group>
+    </mat-tab>
+    <mat-tab label="Fashion"> Content 2 </mat-tab>
+    <mat-tab label="Groceries"> Content 3 </mat-tab>
+  </mat-tab-group>
+  <mat-form-field>
+    <mat-label>Add comments</mat-label>
+    <input matInput>
+  </mat-form-field>
+
+  <mat-action-row>
+    <button mat-raised-button matTooltip="Are you sure?">Apply</button>
+  </mat-action-row>
+
+
+</mat-expansion-panel>

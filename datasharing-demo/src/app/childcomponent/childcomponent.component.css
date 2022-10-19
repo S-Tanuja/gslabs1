@@ -1,0 +1,19 @@
+.child{
+    background-color: bisque;
+    /* width: 50vw;
+    height:50vh; */
+    text-align: center;
+   
+}
+.btn{
+    padding: 8px;
+    background-color:#ececec;
+    margin-left: 250px;
+    margin-top: 10px;
+}
+
+
+.display{
+    display: flex;
+    
+}

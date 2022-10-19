@@ -1,0 +1,18 @@
+<div class="main">
+    <div>
+        <div class="parent">
+            <h3>parent works!</h3>
+        <input type="text" placeholder="enter name" #name>
+        <button class="btn" (click)="name_to_components(name.value)">Submit</button><br><br>
+            <!-- <p>{{details.name}}</p>
+        <p>{{details.yearOfPassing}}</p>
+        <p>{{details.branch}}</p> -->
+            {{year}} {{branch}} {{Name}}
+
+        </div>
+        <app-childcomponent (childEvent)="parentfunction($event)" 
+        
+        [parentData]="bindvalue"></app-childcomponent>
+        <app-childcomponent2 [parentData]="bindvalue"></app-childcomponent2>
+    </div>
+</div>

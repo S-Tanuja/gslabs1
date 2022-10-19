@@ -1,7 +1,7 @@
 *{
     margin: auto;
-    background-attachment: fixed;
-    background:none;
+   
+    /* background:none; */
 }
 .is-invalid{
     border:red 1px solid;
@@ -24,7 +24,8 @@
   
     /* border: 1px solid grey; */
     width: 40%;
-    height: 40%;
+    height: 100vh;
+    overflow-y: auto;
     float: right;
     margin: 40px;
     /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
@@ -36,6 +37,8 @@
 }
 h2{
 text-align: center;
+}span{
+    display: flex-left;
 }
 .small1{
     color:#918989;
@@ -46,7 +49,6 @@ form{
     background-color: whitesmoke;
     padding: 15px;
     border-radius: 5px;
-
 }
 
 label{
@@ -74,3 +76,4 @@ label{
     margin: 7px 8px;
     border:1px solid #118CAA;
 }
+
