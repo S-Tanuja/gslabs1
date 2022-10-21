@@ -1,0 +1,18 @@
+<!-- <p>child works!</p> -->
+<ul *ngFor="let user of var1">
+    <li>{{user.name}}</li>
+</ul>
+
+<!-- {{var2.name}} -->
+
+
+<form>
+    <div>
+        <input type="text" #name placeholder="enter name">
+    </div>
+    <div>
+        <input type="text" #email placeholder="enter email">
+    </div>
+    <button (click)="addUserdetails(name.value,email.value);">add</button>
+    <!-- <button (click)="editUserdetails(name.value,email.value);">add</button> -->
+</form>
