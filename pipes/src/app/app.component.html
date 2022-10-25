@@ -1,0 +1,12 @@
+<div class="main">
+  <input type="text" placeholder="Enter a string"#name> <br>
+ 
+<button (click)="fun1(name.value)">Transform</button>
+<p>{{refname | reverse  | uppercase }}</p>
+</div>
+
+<input type="date" #date1> <br>
+<button (click)="fun2(date1.valueAsDate)">Get age</button>
+<p>{{refdate | age }}</p>
+
+<router-outlet></router-outlet>

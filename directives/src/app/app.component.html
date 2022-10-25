@@ -1,0 +1,40 @@
+<!-- <div *ngIf="bool;then thenBlock; else elseBlock" >
+  <input type="text" #user1  >
+<button (click)="compare(user1.value)">submit</button>
+</div>
+
+<ng-template #thenBlock>
+  <script>
+    alert('You can proceed further');
+
+  </script>
+</ng-template>
+
+<ng-template #elseBlock>
+  alert('Sorry,You are not the admin');
+</ng-template> -->
+
+<div *ngIf="display;then thenBlock;else elseBlock"></div>
+<ng-template #thenBlock>
+  <p>Valid</p>
+</ng-template>
+
+<ng-template #elseBlock>
+  <p>Invalid</p>
+</ng-template>
+
+
+<div [ngClass]="'a1'">
+  <div *ngFor="let choice of choices">
+    <p>{{choice}}</p>
+  </div>
+</div>
+
+  <div [ngStyle]="{'font-style':'italic','font-size':'20px','background-color':'red','text-align':'center'}">Styling</div>
+
+  <p appCustom>Custom Demo</p>
+
+
+
+
+  <router-outlet></router-outlet>
