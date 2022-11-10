@@ -1,0 +1,156 @@
+
+.subheader{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+.remove{
+    font-weight: 400;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+.msg{
+    color: white;
+    font-size: 12px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    background-color:rgba(255,255,255,0.2);
+    margin-top: 0.1rem;
+    padding: 0.5rem;
+    color: white;
+    flex-wrap: wrap;
+}
+.temperature {
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+}
+.deg{
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.cont{
+    display: flex;
+    flex-direction: row;
+}
+.temp{
+    font-size: 1rem;
+    font-weight: 300;
+}
+#icon{
+    height: 2rem;
+    width: 2rem;
+}
+.comment{
+    color: white;
+    font-size: medium;
+    font-weight: 400;
+}
+.place{
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+.noFavdis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 12%;
+}
+.txt{
+    color: white;
+    font-weight: 400;
+    font-size: x-large;
+    margin-top: 1.5rem;
+}
+.mobileHead{
+    display: none;
+}
+.placetempParent{
+	display: flex;
+	justify-content: space-between;
+	width: 60%;
+}
+
+@media screen and (max-width:550px) {
+   .deg{
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 21px;
+  } 
+ .temp{
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  .comment{
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 16px;
+  }
+  #icon{
+    height: 23px;
+  width: 22px;
+  }
+  .place{
+    color: #FFE539;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 18px;
+  }
+  .mobileHead{
+	display: block;
+	background-color: #FFFFFF;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.searchMatIcon{
+    color: black;
+}
+.arrowIcon{
+    color: black;
+}
+.headerText{
+    margin-left: -10rem;
+    color: #292F33;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-shadow: 0 2px 2px 0 rgba(0,0,0,0.15);
+}
+.subheader{
+    margin-top: -0.5rem;
+}
+ .placetempParent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* gap:0.6rem; */
+ }
+}

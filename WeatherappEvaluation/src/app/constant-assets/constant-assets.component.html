@@ -1,0 +1,55 @@
+<div class="main">
+    <div class="header">
+        <div class="logo">
+            <img src="/assets/logo_web.png" alt="">
+        </div>
+
+        <div class="menu">
+            <mat-icon class="menuIcon" (click)="menuBar()">menu</mat-icon>
+        </div>
+        <div  *ngIf="showMenu">
+            <nav class="sideBar">
+                <button class="tabcontent"  routerLink='/home'>HOME</button>
+                <button class="tabcontent" routerLink='/favourite'>FAVOURITE</button>
+                <button class="tabcontent" routerLink='/recents' >RECENT SEARCH</button>
+            </nav>
+        </div>
+        <div class="searchbar">
+            <div class="search">
+               <input id="search" type="text" placeholder="Search city" #city>
+            </div>
+            <div class="searchIcon" (click)="searchPage()">
+                <mat-icon (click)="disPlace(city.value)" class="matSearch">search</mat-icon>
+            </div>
+            
+            
+            <div *ngIf="searchBar">
+                    <div class="searchPagee">
+                    <div><mat-icon id="arrowIcon" (click)="backToHome()">arrow_back</mat-icon></div>
+                   <div> <input id="search1" type="text" placeholder="Search for city" #city></div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+   
+    <div class="nav">
+        <nav class="tab">
+            <button class="tabcontent1"  routerLink='/home'>HOME</button>
+            <button class="tabcontent" routerLink='/favourite'>FAVOURITE</button>
+            <button class="tabcontent" routerLink='/recents' >RECENT SEARCH</button>
+        </nav>
+        
+    
+   
+            <div class="date">
+                {{date|date:'E'}},{{date|date:'mediumDate'}}&nbsp;&nbsp;{{date|date:'shortTime'}}
+            </div>
+        
+    
+    </div>
+    <!-- <hr> -->
+
+</div>

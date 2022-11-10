@@ -1,0 +1,69 @@
+<app-constant-assets></app-constant-assets>
+
+
+
+<!-- <div class="noFavdis">
+    <div class="img"><img src="/assets/icon_nothing.png" alt=""></div>
+    <div class="txt">No Favourites added</div>
+</div> -->
+
+<div class="main">
+        <div class="subheader">
+            <div class="msg">
+                <span>6 city added as favourite</span>
+            </div>
+            <button (click)="favDialog()" class="remove">
+                Remove All
+            </button>
+        </div>
+        <div class="mobileHead">
+            <div><mat-icon class="arrowIcon" (click)="backToHome()">arrow_back</mat-icon></div>
+            <div class="headerText">Favorite</div>
+            <div><mat-icon class="searchMatIcon">search</mat-icon></div>
+        </div>
+    
+        <div class="row" *ngFor="let data of fCity">
+           <div class="placetempParent">
+            <div class="place">{{data.name}},Karnataka</div>
+            <div class="temperature">
+                <div class="icon"><img src="/assets/icon_mostly_sunny.svg" id="icon" alt=""></div>
+                <div class="cont">
+                    <div class="deg">
+                        {{(data['main'].temp -273.15).toFixed(0)}}  <span class="temp">&#176;C</span>
+                    </div>
+                </div>
+                <div class="comment">
+                    {{(data['weather'][0].description)}}
+                </div>
+            </div>
+           </div>
+    
+            <div class="fav">
+                <mat-icon>favorite_border</mat-icon>
+            </div>
+            
+        </div>
+    
+    
+        <div class="row">
+          <div class="placetempParent">
+            <div class="place">Coorg,Karnataka</div>
+    
+            <div class="temperature">
+                <div class="icon"><img src="/assets/icon_rain_big.png" id="icon" alt=""></div>
+                <div class="cont">
+                    <div class="deg">
+                        25 <span class="temp">&#176;C</span>
+                    </div>
+                </div>
+                <div class="comment">
+                    Mostly Cloudy
+                </div>
+            </div>
+            
+        </div>
+        <div class="fav">
+            <mat-icon>favorite_border</mat-icon>
+        </div>
+          </div>
+</div>

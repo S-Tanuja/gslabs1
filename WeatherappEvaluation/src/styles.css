@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body{
+    background: url('/assets/background.png') no-repeat  center center/cover;
+    height: 50vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.mat-icon{
+    color: white;
+}
+.main{
+    margin: 4% 5%; 
+}

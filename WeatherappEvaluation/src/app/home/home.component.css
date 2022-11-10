@@ -1,0 +1,178 @@
+#city{
+    font-size: 1rem;
+    color: white;
+}
+.addfav{
+    display: flex;
+    margin-top: 1rem;
+}
+.text{
+    color: white;
+  
+}
+.imgsunny{
+    height: 2rem;
+    width: 2rem;
+}
+#sunny{
+    height: 5rem;
+    width: 5rem;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 3rem;
+   
+}
+
+.temptext{
+    font-size: 3.5rem;
+    color: white;
+    margin-top: 0.5rem;
+    font-weight:600;
+    display: flex;
+}
+.temperature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+#degbtn{
+    padding: 0.2rem;
+    background-color: transparent;
+    border: white 1px solid;
+}
+#degbtn:hover{
+    background-color: white;
+  
+}
+.deg{
+    color: white;
+    font-size: 1rem;
+}
+.deg:hover{
+    color: red;
+}
+.comment{
+    font-size: 1rem;
+    color: white;
+    margin-top: 1rem;
+}
+.footer{
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	margin-top: 3rem;
+}
+.footer::-webkit-scrollbar {
+    display: none;
+}
+.minmax{
+    display: flex;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.favtext{
+    font-size: 0.7rem;
+    font-weight: 400;
+    margin-left: 0.5rem;
+    color: white;
+}
+
+.extent{
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    height: 1rem;
+   gap: 1rem;
+}
+.elem{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+}
+#icon1{
+    height: 2rem;
+    width: 1rem;
+}
+#icon2{
+    height: 1rem;
+    width: 2rem;
+}
+#icon3{
+    height: 2rem;
+    width: 1.5rem;
+}
+#icon4{
+    height: 1.5rem;
+    width: 2rem;
+}
+#icon5{
+    height: 1rem;
+    width: 2rem;
+}
+hr{
+    color: rgba(255,255,255,0.5);
+    margin-top: 3.5rem;
+}
+mat-icon{
+    color: white;
+}
+.color{
+    color: #FFD639;
+}
+.nocolor{
+    color: white;
+}
+.dates{
+    display: none;
+}
+
+@media screen and (max-width:550px) {
+   
+    .aligncenter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .center{
+        margin-top: 3rem;
+    }
+    .img{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    .temptext{
+        font-size: 3rem;
+        margin-top: 1.5rem;
+    }
+    .footer{
+        margin-top: none;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        overflow-y: hidden;
+    }
+    .dates{
+        display: block;
+        font-size: 1rem;
+        color:rgba(255,255,255,0.7);
+        margin-bottom: 1rem; 
+    }
+   
+}
+
+
+
